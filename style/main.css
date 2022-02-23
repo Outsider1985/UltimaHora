@@ -1,0 +1,348 @@
+/*====================
+=======Structure======
+======================*/
+
+body{ 
+    background-color: hsl(0, 0%, 100%); 
+    color: hsl(210, 11%, 15%);
+    display:flex; 
+    flex-direction:column;
+    font-family: Roboto,"Helvetica Neue",Arial;  
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 auto;
+    min-height: 100vh;
+    text-align: left;
+    width: 100%;
+}
+
+header{
+    height: 17vh;
+    justify-content: start;
+    width: 100%;
+    margin: 0 0% 0 0%;
+}
+
+.nav-top{
+    display: flex;
+    flex-direction: column;
+    font-size: .75rem;
+    margin: 0 0% 0.5em 0%;
+    padding: 0;
+    width: 100%;
+    height: 13vh;
+}
+
+.nav-top-container{
+    margin: 0 0 0 0;
+    padding: 0;
+    width: 100%;
+    height: 3vh;
+    background-color: hsl(0, 0%, 90%);
+    font-weight: bold;
+}
+
+.nav-top-container-2col{
+    display: flex;
+    flex-direction: row;
+    height: 3vh;
+    width: 100%;
+}
+
+.nav-top-today{
+    margin: 0;
+    width: 60%;
+    height: 3vh;
+
+}
+
+.nav-top-news-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav-top-news-list-start{
+    color: hsl(0, 100%, 40%);
+}
+
+.nav-top-news-list-item
+
+.nav-top-islands{
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    width: 40%;
+    height: 3vh;
+}
+
+.nav-top-today ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 0.5em;
+    list-style-type: none;
+
+}
+
+.nav-top-islands ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 1em;
+    list-style-type: none;
+
+}
+
+.nav-top-fixed{
+    margin: 0 0 0 0;
+    padding: 0 0;
+    width: 100%;
+    height: 10vh;
+    background-color: hsl(0, 100%, 40%);
+    font-weight: bold;
+}
+
+.nav-top-fixed-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 10vh;
+    width: 100%;
+}
+
+.nav-top-hamburguer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 3vh;
+    width: 3%;
+}
+
+.nav-top-hamburguer svg{
+    fill: hsl(0, 0%, 100%);
+}
+
+.nav-top-hamburguer-menu{
+    display: none;
+}
+.brand{
+    fill: hsl(0, 0%, 100%);
+    width: 25%;
+    height: 10vh;
+}
+
+.nav-top-buttoms{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 2em;
+    height: 3vh;
+}
+
+.nav-top-inline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: hsl(210, 11%, 15%);
+    background-color: hsl(207, 17%, 88%);
+    border-color: hsl(210, 16%, 85%);
+    border-radius: 0.5em;
+}
+
+.nav-top-inline svg{
+    width: 2em;
+    height: 2em;
+}
+
+.nav-top-subscribe{
+    background-color: hsl(47, 100%, 50%);
+    border-radius: 0.5em;
+    font-family: "Times New Roman",Times,serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.nav-top-fixed-scroller{
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1021;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 0.5em;
+}
+
+.nav-bottom{
+    width: 100%;
+    height: 3vh;
+    border-bottom: solid 2px hsl(0, 0%, 80%);
+    background-color: hsl(0, 0%, 90%);
+    margin-bottom: 0.5em;
+}
+
+.nav-bottom-container{
+    width: 100%;
+    height: 3vh;
+}
+
+.nav-bottom-menu{
+    margin: 0;
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-bottom-menu-home {
+    width: 1.5em;
+    height: 1.5em;
+    fill: rgb(0, 0, 0);
+}
+
+.nav-bottom-menu-item{
+    color: hsl(0, 0%, 20%);
+    font-weight: 700;
+    font-size: .9rem;
+    font-family: "Roboto Condensed";
+}
+
+.nav-bottom-menu-search {
+    width: 1.5em;
+    height: 1.5em;
+    fill: rgb(0, 0, 0);
+}
+
+main{
+    margin: 0 5% 0 5%;
+    width: 90%;
+}
+
+.main-container{
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-banner{
+    margin-bottom: 0.5em;
+    width: 90%;
+}
+
+.desktop-news{
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-image{
+    z-index: 1000;
+    margin-bottom: 1.5em;
+}
+
+.news-featured-title{
+    text-align: center;
+    position: relative;
+    bottom: 3em;
+    z-index: 1005;
+    background-color: hsl(0, 100%, 40%);
+    width: 15em;
+}
+
+.news-title{
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+.news-description{
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+.news-author{
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+.desktop-4-col{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.desktop-1-col{
+    width: 25%;
+}
+
+.desktop-3news-banner{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.desktop-3news-block{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.desktop-2-col-news{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.aside-banner{
+    width: 25%;
+}
+
+.banner{
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+footer{
+    margin-top: 1em; 
+    margin: 0 0 0 0;
+    padding: 0 0;
+    width: 100%;
+    height: 10vh;
+    background-color: hsl(0, 100%, 40%);
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*====================
+======Typography======
+======================*/
+
+
+
+/*====================
+========Image=========
+======================*/
+
+img {
+    max-width: 100%;
+}
+
+@media (max-width:479px) {}

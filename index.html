@@ -14,27 +14,27 @@
     <!---->
     <body>
         <header>
-            <nav class="nav-top">
-                <div class="nav-top-container">
-                    <div class="nav-top-container-2col">
+            <nav class="nav-top-container">
+                <div class="nav-top-shortcuts">
+                    <div class="nav-top-2col">
                         <div class="nav-top-today">
                             <ul class="nav-top-news-list">
                                     <li class="nav-top-news-list-start">Hoy es noticia:</li>
-                                    <li class="nav-top-news-list-item"><a>Guerra en el PP -</a></li>
-                                    <li class="nav-top-news-list-item"><a>Ley turística -</a></li>
-                                    <li class="nav-top-news-list-item"><a>Conflicto Ucrania-Rusia</a></li>
+                                    <li class="nav-top-news-list-item"><a href=""><p>Guerra en el PP -</p></a></li>
+                                    <li class="nav-top-news-list-item"><a href=""><p>Ley turística -</p></a></li>
+                                    <li class="nav-top-news-list-item"><a href=""><p>Conflicto Ucrania-Rusia</p></a></li>
                             </ul>
                         </div>
                         <div class="nav-top-islands">
                             <ul class="nav-top-islands-list">
                                 <li class="nav-top-islands-list-item">
-                                    <a>MALLORCA</a>
+                                    <a href=""><p>MALLORCA |</p></a>
                                 </li>
                                 <li class="nav-top-islands-list-item">
-                                    <a>MENORCA</a>
+                                    <a href=""><p>MENORCA |</p></a>
                                 </li>
                                 <li class="nav-top-islands-list-item">
-                                    <a>IBIZA Y FORMENTERA</a>
+                                    <a href=""><p>IBIZA Y FORMENTERA |</p></a>
                                 </li>
                             </ul>
                         </div>
@@ -42,15 +42,15 @@
                 </div>
                 <div class="nav-top-fixed">
                     <div class="nav-top-fixed-container">
-                        <div id="nav-top-hamburguer">
-                            <svg viewBox="0 0 100 80" width="40" height="40">
-                                <rect width="100" height="20"></rect>
-                                <rect y="30" width="100" height="20"></rect>
-                                <rect y="60" width="100" height="20"></rect>
-                            </svg>
+                        <div class="hamburguer-container">
+                            <a id="hamburguer" href="">
+                                <svg style="width:40px;height:40px" viewBox="0 0 24 24">
+                                    <path fill="white" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                                </svg>
+                            </a>
                         </div>
-                        <div class="nav-top-hamburguer-menu">
-                            <ul class="nav-top-hamburguer-menu-list">
+                        <div class="hamburguer-menu">
+                            <ul class="hamburguer-menu-list">
                                 <li class="nav-top-hamburguer-menu-list-item"><svg></svg><form></form></li>
                                 <li class="nav-top-hamburguer-menu-list-item">PORTADA</li>
                                 <li class="nav-top-hamburguer-menu-list-item">NOTICIAS</li>
@@ -84,10 +84,10 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="brand"><a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 25"><path d="M137.96 7.01c-2.93.13-3.88 1.95-3.88 1.95V7.21h-6.9v3.81h.81v9.39h-.92v3.92h8.14v-3.92h-1.13V15.1s-.43-2.22 2.27-2.22c.68 0 1.62.26 1.62.26l-.01-6.13zM91.63 1.17v4.02h1.52v15.06h-1.52v4.03h8.96v-3.92h-1.3V15.2h3.46v5.05h-1.3v4.03h9.28v-4.03h-1.62V5.09h1.62V1.17h-9.39v3.92h1.41v5.16h-3.46V5.09h1.3V1.17zm53.67 20.07c-1.02 0-.97-.88-.97-.88v-2.48s.11-1.08 1.02-1.08c.97 0 .97 1.08.97 1.08v2.48s.06.88-1.02.88m6.52-.83v-8.36s.49-5.62-6.82-5.62c-4.13 0-5.91 1.39-5.91 1.39v4.28s2.05-1.39 4.48-1.39c2.7 0 2.64 1.39 2.64 1.39v2.53s-1.24-1.08-3.1-1.08c-5.21 0-4.99 5.57-4.99 5.57s-.33 5.88 4.89 5.88c1.9 0 3.2-1.5 3.2-1.5v.83h6.63V20.4l-1.02.01zm-34.27-7.79s.06-1.6 1.19-1.6c1.19 0 1.24 1.6 1.24 1.6v6.65s-.06 1.24-1.19 1.24-1.24-1.24-1.24-1.24v-6.65zm1.21-5.83c-6.04 0-7.66 4.02-7.66 9.13 0 4.39 1.78 8.82 7.66 8.82 6.14 0 7.66-4.18 7.66-8.82 0-5-1.56-9.13-7.66-9.13M.36 1.02h9.77v3.94h-1.5v13.23s-.08 2.34 1.95 2.34c0 0 2.26.22 2.26-2.34.08 0 0-12.13 0-12.13s-.3-1.1-1.8-1.1V1.02h6.92v3.94s-1.58.15-1.58 1.02c.08 0 0 13.08 0 13.08s.45 5.19-5.71 5.77c0 0-8.57 1.24-8.5-6.72-.08 0 0-13.15 0-13.15H.37V1.02zM18.85.91v3.98h.75v15.52h-.97v3.92h8.14v-3.92h-1.08V.91zm9.06 2.99v3.3h-1.08v3.82h1.03v8.62s-.9 2.62 1.4 4.07c2.07 1.31 6.47-.16 6.47-.16v-3.77s-1.03.52-1.72-.16c-.26-.25-.22-.88-.22-.88V11h2.11V7.2h-2.11V2.4l-5.88 1.5zm8.95 3.31v3.81h.97v9.39h-.97v3.92H45v-3.92h-1.02V7.21zm0-3.87c0-1.62 1.62-2.94 3.61-2.94 1.99 0 3.61 1.32 3.61 2.94 0 1.62-1.62 2.94-3.61 2.94-1.99 0-3.61-1.32-3.61-2.94m9 3.87v3.82h.81v9.39h-.92v3.92h8.14v-3.92h-1.13v-8.36s-.06-1.08.92-1.08c1.02 0 1.02 1.08 1.02 1.08v12.27h7.23v-3.92H60.8v-8.36s.11-1.08 1.02-1.08c.97 0 1.02 1.08 1.02 1.08v12.27h6.9V20.4h-.92V10.35s-.06-3.97-4.37-3.97c-2.86 0-3.99 1.91-3.99 1.91s-1.19-1.96-3.51-1.96c-3.18 0-4.21 2.63-4.21 2.63V7.21h-6.88zm31.5 14.03c-1.02 0-.97-.88-.97-.88v-2.48s.11-1.08 1.02-1.08c.97 0 .97 1.08.97 1.08v2.48c.01 0 .06.88-1.02.88m6.52-.83v-8.36s.49-5.62-6.82-5.62c-4.13 0-5.91 1.39-5.91 1.39v4.28s2.05-1.39 4.48-1.39c2.7 0 2.64 1.39 2.64 1.39v2.53s-1.24-1.08-3.1-1.08c-5.21 0-4.99 5.57-4.99 5.57S69.86 25 75.08 25c1.9 0 3.19-1.49 3.19-1.49v.83h6.63v-3.92l-1.02-.01z"></path></svg></a></div>
+                        <div class="brand"><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 25"><path d="M137.96 7.01c-2.93.13-3.88 1.95-3.88 1.95V7.21h-6.9v3.81h.81v9.39h-.92v3.92h8.14v-3.92h-1.13V15.1s-.43-2.22 2.27-2.22c.68 0 1.62.26 1.62.26l-.01-6.13zM91.63 1.17v4.02h1.52v15.06h-1.52v4.03h8.96v-3.92h-1.3V15.2h3.46v5.05h-1.3v4.03h9.28v-4.03h-1.62V5.09h1.62V1.17h-9.39v3.92h1.41v5.16h-3.46V5.09h1.3V1.17zm53.67 20.07c-1.02 0-.97-.88-.97-.88v-2.48s.11-1.08 1.02-1.08c.97 0 .97 1.08.97 1.08v2.48s.06.88-1.02.88m6.52-.83v-8.36s.49-5.62-6.82-5.62c-4.13 0-5.91 1.39-5.91 1.39v4.28s2.05-1.39 4.48-1.39c2.7 0 2.64 1.39 2.64 1.39v2.53s-1.24-1.08-3.1-1.08c-5.21 0-4.99 5.57-4.99 5.57s-.33 5.88 4.89 5.88c1.9 0 3.2-1.5 3.2-1.5v.83h6.63V20.4l-1.02.01zm-34.27-7.79s.06-1.6 1.19-1.6c1.19 0 1.24 1.6 1.24 1.6v6.65s-.06 1.24-1.19 1.24-1.24-1.24-1.24-1.24v-6.65zm1.21-5.83c-6.04 0-7.66 4.02-7.66 9.13 0 4.39 1.78 8.82 7.66 8.82 6.14 0 7.66-4.18 7.66-8.82 0-5-1.56-9.13-7.66-9.13M.36 1.02h9.77v3.94h-1.5v13.23s-.08 2.34 1.95 2.34c0 0 2.26.22 2.26-2.34.08 0 0-12.13 0-12.13s-.3-1.1-1.8-1.1V1.02h6.92v3.94s-1.58.15-1.58 1.02c.08 0 0 13.08 0 13.08s.45 5.19-5.71 5.77c0 0-8.57 1.24-8.5-6.72-.08 0 0-13.15 0-13.15H.37V1.02zM18.85.91v3.98h.75v15.52h-.97v3.92h8.14v-3.92h-1.08V.91zm9.06 2.99v3.3h-1.08v3.82h1.03v8.62s-.9 2.62 1.4 4.07c2.07 1.31 6.47-.16 6.47-.16v-3.77s-1.03.52-1.72-.16c-.26-.25-.22-.88-.22-.88V11h2.11V7.2h-2.11V2.4l-5.88 1.5zm8.95 3.31v3.81h.97v9.39h-.97v3.92H45v-3.92h-1.02V7.21zm0-3.87c0-1.62 1.62-2.94 3.61-2.94 1.99 0 3.61 1.32 3.61 2.94 0 1.62-1.62 2.94-3.61 2.94-1.99 0-3.61-1.32-3.61-2.94m9 3.87v3.82h.81v9.39h-.92v3.92h8.14v-3.92h-1.13v-8.36s-.06-1.08.92-1.08c1.02 0 1.02 1.08 1.02 1.08v12.27h7.23v-3.92H60.8v-8.36s.11-1.08 1.02-1.08c.97 0 1.02 1.08 1.02 1.08v12.27h6.9V20.4h-.92V10.35s-.06-3.97-4.37-3.97c-2.86 0-3.99 1.91-3.99 1.91s-1.19-1.96-3.51-1.96c-3.18 0-4.21 2.63-4.21 2.63V7.21h-6.88zm31.5 14.03c-1.02 0-.97-.88-.97-.88v-2.48s.11-1.08 1.02-1.08c.97 0 .97 1.08.97 1.08v2.48c.01 0 .06.88-1.02.88m6.52-.83v-8.36s.49-5.62-6.82-5.62c-4.13 0-5.91 1.39-5.91 1.39v4.28s2.05-1.39 4.48-1.39c2.7 0 2.64 1.39 2.64 1.39v2.53s-1.24-1.08-3.1-1.08c-5.21 0-4.99 5.57-4.99 5.57S69.86 25 75.08 25c1.9 0 3.19-1.49 3.19-1.49v.83h6.63v-3.92l-1.02-.01z"></path></svg></a></div>
                         <div class="nav-top-buttoms">
-                            <div class="nav-top-inline"><a>Iniciar Sesión<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.05 6.6L5.99 5.54c3.57-3.46 9.27-3.37 12.73.19s3.37 9.27-.19 12.73-9.27 3.37-12.73-.19c-.1-.1-.2-.21-.3-.32l1.06-1.06c2.7 3.14 7.43 3.51 10.58.81s3.51-7.43.81-10.58-7.43-3.51-10.58-.81c-.11.09-.22.19-.32.29z"></path><path d="M5.86 12.29H0v-1.5h5.86M12.5 18c1.01 0 1.99-.26 2.86-.77.86-.47 1.6-1.15 2.14-1.97-.01-.52-.33-.99-.94-1.42-.53-.37-1.21-.66-2.04-.9-.75-.2-1.42-.31-2.03-.31s-1.28.1-2.03.31c-.83.23-1.5.53-2.02.9-.61.43-.93.91-.94 1.42.54.82 1.28 1.5 2.14 1.97.91.51 1.86.77 2.86.77zm0-11c-.44 0-.85.11-1.24.35A2.563 2.563 0 0010 9.54c0 .45.11.87.34 1.26.23.39.53.71.92.94a2.4 2.4 0 002.48 0c.39-.23.69-.54.92-.94.23-.39.34-.81.34-1.26 0-.45-.11-.87-.34-1.26-.22-.39-.54-.71-.92-.93A2.4 2.4 0 0012.5 7z"></path><path d="M3.68 8.61v5.87h-1.5V8.61"></path></svg></a></div>
-                            <div class="nav-top-subscribe"><a id=></a>Regístrate</div>
+                            <div class="nav-top-inline"><a href=""><p>Iniciar Sesión</p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.05 6.6L5.99 5.54c3.57-3.46 9.27-3.37 12.73.19s3.37 9.27-.19 12.73-9.27 3.37-12.73-.19c-.1-.1-.2-.21-.3-.32l1.06-1.06c2.7 3.14 7.43 3.51 10.58.81s3.51-7.43.81-10.58-7.43-3.51-10.58-.81c-.11.09-.22.19-.32.29z"></path><path d="M5.86 12.29H0v-1.5h5.86M12.5 18c1.01 0 1.99-.26 2.86-.77.86-.47 1.6-1.15 2.14-1.97-.01-.52-.33-.99-.94-1.42-.53-.37-1.21-.66-2.04-.9-.75-.2-1.42-.31-2.03-.31s-1.28.1-2.03.31c-.83.23-1.5.53-2.02.9-.61.43-.93.91-.94 1.42.54.82 1.28 1.5 2.14 1.97.91.51 1.86.77 2.86.77zm0-11c-.44 0-.85.11-1.24.35A2.563 2.563 0 0010 9.54c0 .45.11.87.34 1.26.23.39.53.71.92.94a2.4 2.4 0 002.48 0c.39-.23.69-.54.92-.94.23-.39.34-.81.34-1.26 0-.45-.11-.87-.34-1.26-.22-.39-.54-.71-.92-.93A2.4 2.4 0 0012.5 7z"></path><path d="M3.68 8.61v5.87h-1.5V8.61"></path></svg></a></div>
+                            <div class="nav-top-subscribe"><a href=""><p>Regístrate</p></a></div>
                         </div>                        
                     </div>
                     <div class="nav-top-fixed-scroller">
@@ -98,18 +98,18 @@
             <nav class="nav-bottom">
                 <div class="nav-bottom-container">
                     <ul class="nav-bottom-menu">
-                        <li class="nav-bottom-menu-home"><a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4l8 7.77-1.5 1.46-6.5-6.3-6.49 6.3L4 11.77 12 4zM6.29 19v-4.98L12 8.61l5.71 5.4V19h-4.08v-4.53h-3.26V19H6.29z" fill-rule="evenodd" clip-rule="evenodd"></path></svg></a></li>
-                        <li class="nav-bottom-menu-item"><a>NOTICIAS</a></li>
-                        <li class="nav-bottom-menu-item"><a>SUCESOS</a></li>
-                        <li class="nav-bottom-menu-item"><a>DEPORTES</a></li>
-                        <li class="nav-bottom-menu-item"><a>OPINIÓN</a></li>
-                        <li class="nav-bottom-menu-item"><a>XALOC</a></li>
-                        <li class="nav-bottom-menu-item"><a>PARTICIPA</a></li>
-                        <li class="nav-bottom-menu-item"><a>OCIO</a></li>
-                        <li class="nav-bottom-menu-item"><a>VIPS</a></li>
-                        <li class="nav-bottom-menu-item"><a>GUÍA ÚTIL</a></li>
-                        <li class="nav-bottom-menu-item"><a>MONOGRÁFICOS</a></li>
-                        <li class="nav-bottom-menu-search"><a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path d="M195.55 173.79l-41.22-41.22c9.94-14.34 14.9-30.32 14.9-47.95 0-11.47-2.22-22.42-6.67-32.88-4.45-10.45-10.46-19.47-18.03-27.04s-16.58-13.59-27.04-18.03C107.03 2.22 96.08 0 84.62 0 73.16 0 62.2 2.22 51.74 6.67 41.28 11.11 32.27 17.13 24.7 24.7c-7.58 7.57-13.58 16.59-18.03 27.04C2.22 62.2 0 73.15 0 84.62c0 11.46 2.22 22.42 6.67 32.88 4.45 10.45 10.46 19.47 18.03 27.04 7.57 7.56 16.59 13.58 27.04 18.03 10.46 4.44 21.42 6.67 32.87 6.67 17.63 0 33.62-4.98 47.96-14.91l41.22 41.1c2.89 3.05 6.49 4.58 10.82 4.58 4.25 0 7.87-1.51 10.87-4.51 3.01-3 4.51-6.63 4.51-10.88s-1.47-7.86-4.44-10.83zm-72.89-51.13c-10.54 10.53-23.22 15.8-38.04 15.8s-27.5-5.26-38.04-15.8c-10.54-10.54-15.81-23.22-15.81-38.04s5.27-27.51 15.81-38.04c10.54-10.53 23.21-15.81 38.04-15.81s27.5 5.28 38.04 15.81c10.54 10.53 15.81 23.22 15.81 38.04s-5.28 27.5-15.81 38.04z"></path></svg></a></li>
+                        <li class="nav-bottom-menu-home"><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4l8 7.77-1.5 1.46-6.5-6.3-6.49 6.3L4 11.77 12 4zM6.29 19v-4.98L12 8.61l5.71 5.4V19h-4.08v-4.53h-3.26V19H6.29z" fill-rule="evenodd" clip-rule="evenodd"></path></svg></a></li>
+                        <li class="nav-bottom-menu-item"><a href="">NOTICIAS</a></li>
+                        <li class="nav-bottom-menu-item"><a href="">SUCESOS</a></li>
+                        <li class="nav-bottom-menu-item"><a href="">DEPORTES</a></li>
+                        <li class="nav-bottom-menu-item"><a href="">OPINIÓN</a></li>
+                        <li class="nav-bottom-menu-item"><a href="">XALOC</a></li>
+                        <li class="nav-bottom-menu-item"><a href="">PARTICIPA</a></li>
+                        <li class="nav-bottom-menu-item"><a href="">OCIO</a></li>
+                        <li class="nav-bottom-menu-item"><a href="">VIPS</a></li>
+                        <li class="nav-bottom-menu-item"><a href="">GUÍA ÚTIL</a></li>
+                        <li class="nav-bottom-menu-item"><a href="">MONOGRÁFICOS</a></li>
+                        <li class="nav-bottom-menu-search"><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path d="M195.55 173.79l-41.22-41.22c9.94-14.34 14.9-30.32 14.9-47.95 0-11.47-2.22-22.42-6.67-32.88-4.45-10.45-10.46-19.47-18.03-27.04s-16.58-13.59-27.04-18.03C107.03 2.22 96.08 0 84.62 0 73.16 0 62.2 2.22 51.74 6.67 41.28 11.11 32.27 17.13 24.7 24.7c-7.58 7.57-13.58 16.59-18.03 27.04C2.22 62.2 0 73.15 0 84.62c0 11.46 2.22 22.42 6.67 32.88 4.45 10.45 10.46 19.47 18.03 27.04 7.57 7.56 16.59 13.58 27.04 18.03 10.46 4.44 21.42 6.67 32.87 6.67 17.63 0 33.62-4.98 47.96-14.91l41.22 41.1c2.89 3.05 6.49 4.58 10.82 4.58 4.25 0 7.87-1.51 10.87-4.51 3.01-3 4.51-6.63 4.51-10.88s-1.47-7.86-4.44-10.83zm-72.89-51.13c-10.54 10.53-23.22 15.8-38.04 15.8s-27.5-5.26-38.04-15.8c-10.54-10.54-15.81-23.22-15.81-38.04s5.27-27.51 15.81-38.04c10.54-10.53 23.21-15.81 38.04-15.81s27.5 5.28 38.04 15.81c10.54 10.53 15.81 23.22 15.81 38.04s-5.28 27.5-15.81 38.04z"></path></svg></a></li>
                     </ul>
                 </div>
             </nav>
@@ -118,12 +118,12 @@
         <main>
             <div class="main-container">
                 <div class="top-banner">
-                    <img src="https://tpc.googlesyndication.com/simgad/1240214728532837057" border="0" width="980" height="250" alt="" class="img_ad">
+                    <a href=""><img src="https://tpc.googlesyndication.com/simgad/1240214728532837057" width="980" height="250" alt="" class="img_ad"></a>
                 </div>
-                <div class="desktop-news">
-                    <div class="news-image"><img src="/images/teo.jpg" alt=""></div>
-                    <div class="news-featured-title"><a class="featured-color" href="/historia/guerra-pp.html"><h2>Guerra en el PP</h2></a></div>
-                    <div class="news-title"><a class="" title="Dimite Teo García Egea, secretario general del PP" data-value="1702885" href="/noticias/nacional/2022/02/22/1702885/guerra-dimite-teo-garcia-egea-secretario-general-del-pp.html"><h3>Dimite Teo García Egea, secretario general del PP</h3></a></div>
+                <div class="desktop-featured-news">
+                    <div class="news-image"><a href=""><img src="/images/teo.jpg" alt=""></a></div>
+                    <div class="news-featured-title"><a class="featured-color" href=""><h2>Guerra en el PP</h2></a></div>
+                    <div class="news-title"><a class="" title="Dimite Teo García Egea, secretario general del PP" data-value="1702885" href=""><h3>Dimite Teo García Egea, secretario general del PP</h3></a></div>
                     <div class="news-description"><h4>Muchos cargos del PP llevan solicitando la salida de la mano derecha de Pablo Casado desde hace días.</h4></div>
                     <div class="news-author"><h5>Pepito</h5></div>
                 </div>
@@ -131,7 +131,7 @@
                     <div class="desktop-1-col">
                         <div class="desktop-news">
                             <div class="news-image"><img src="/images/1930491.jpg" alt=""></div>
-                            <div class="news-title"><a class="" title="Dimite Teo García Egea, secretario general del PP" data-value="1702885" href="/noticias/nacional/2022/02/22/1702885/guerra-dimite-teo-garcia-egea-secretario-general-del-pp.html"><h3>Dimite Teo García Egea, secretario general del PP</h3></a></div>
+                            <div class="news-title"><a class="" title="Dimite Teo García Egea, secretario general del PP" data-value="1702885" href=""><h3>Dimite Teo García Egea, secretario general del PP</h3></a></div>
                             <div class="news-description"><h4>Pablo Casado: "Tuve que intentar serrucharle el piso. Era ella o yo."</h4></div>
                             <div class="news-author"><h5>Pepito</h5></div>
                         </div>
@@ -139,7 +139,7 @@
                     <div class="desktop-1-col">
                         <div class="desktop-news">
                             <div class="news-image"><img src="/images/1930619.jpg" alt=""></div>
-                            <div class="news-title"><a class="" title="Dimite Teo García Egea, secretario general del PP" data-value="1702885" href="/noticias/nacional/2022/02/22/1702885/guerra-dimite-teo-garcia-egea-secretario-general-del-pp.html"><h3>Dimite Teo García Egea, secretario general del PP</h3></a></div>
+                            <div class="news-title"><a class="" title="Dimite Teo García Egea, secretario general del PP" data-value="1702885" href=""><h3>Dimite Teo García Egea, secretario general del PP</h3></a></div>
                             <div class="news-description"><h4>Prohens: "Me da mucha vergüenza ajena. Pido perdón a los votantes"</h4></div>
                             <div class="news-author"><h5>Pepito</h5></div>
                         </div>
@@ -147,7 +147,7 @@
                     <div class="desktop-1-col">
                         <div class="desktop-news">
                             <div class="news-image"><img src="images\1930655.jpg" alt=""></div>
-                            <div class="news-title"><a class="" title="Dimite Teo García Egea, secretario general del PP" data-value="1702885" href="/noticias/nacional/2022/02/22/1702885/guerra-dimite-teo-garcia-egea-secretario-general-del-pp.html"><h3>Dimite Teo García Egea, secretario general del PP</h3></a></div>
+                            <div class="news-title"><a class="" title="Dimite Teo García Egea, secretario general del PP" data-value="1702885" href=""><h3>Dimite Teo García Egea, secretario general del PP</h3></a></div>
                             <div class="news-description"><h4>Teo: "La he cagado y mucho. Me da pena por Casado que pagará el pato."</h4></div>
                             <div class="news-author"><h5>Pepito</h5></div>
                         </div>
@@ -155,7 +155,7 @@
                     <div class="desktop-1-col">
                         <div class="desktop-news">
                             <div class="news-image"><img src="images\1930735.jpg" alt=""></div>
-                            <div class="news-title"><a class="" title="Dimite Teo García Egea, secretario general del PP" data-value="1702885" href="/noticias/nacional/2022/02/22/1702885/guerra-dimite-teo-garcia-egea-secretario-general-del-pp.html"><h3>Dimite Teo García Egea, secretario general del PP</h3></a></div>
+                            <div class="news-title"><a class="" title="Dimite Teo García Egea, secretario general del PP" data-value="1702885" href=""><h3>Dimite Teo García Egea, secretario general del PP</h3></a></div>
                             <div class="news-description"><h4>"Estoy contento que salgan compañeros así sigo trepando en el partido...si es que sobrevive."</h4></div>
                             <div class="news-author"><h5>Pepito</h5></div>
                         </div>
@@ -165,20 +165,26 @@
                     <div class="desktop-3news-block">
                         <div class="desktop-news">
                             <div class="news-image"><img src="/images/1.jpg" alt=""></div>
-                            <div class="news-title"><a class="" title="Dimite Teo García Egea, secretario general del PP" data-value="1702885" href="/noticias/nacional/2022/02/22/1702885/guerra-dimite-teo-garcia-egea-secretario-general-del-pp.html"><h3>Dimite Teo García Egea, secretario general del PP</h3></a></div>
+                            <div class="news-title"><a class="" title="Dimite Teo García Egea, secretario general del PP" data-value="1702885" href=""><h3>Dimite Teo García Egea, secretario general del PP</h3></a></div>
                             <div class="news-description"><h4>En el Partido Socialista se recibió la noticia con mucha alegría. Presidenta de Baleares: "ya huelo más votos. Lo celebraré en el mismo bar y sin restricciones de horario."</h4></div>
                             <div class="news-author"><h5>Pepito</h5></div>
                         </div>                   
-                        <div class="desktop-2-col-news">
+                        <div class="desktop-3-col-news">
                             <div class="desktop-news">
                                 <div class="news-image"><img src="images\1930681.jpg" alt=""></div>
-                                <div class="news-title"><a class="" title="Dimite Teo García Egea, secretario general del PP" data-value="1702885" href="/noticias/nacional/2022/02/22/1702885/guerra-dimite-teo-garcia-egea-secretario-general-del-pp.html"><h3>Dimite Teo García Egea, secretario general del PP</h3></a></div>
+                                <div class="news-title"><a class="" title="Dimite Teo García Egea, secretario general del PP" data-value="1702885" href=""><h3>Dimite Teo García Egea, secretario general del PP</h3></a></div>
                                 <div class="news-description"><h4>Afines a Vox salen a la calle para mofarse del PP por derechita cobarde.</h4></div>
                                 <div class="news-author"><h5>Pepito</h5></div>
                             </div>
                             <div class="desktop-news">
                                 <div class="news-image"><img src="images\1930759.jpg" alt=""></div>
-                                <div class="news-title"><a class="" title="Dimite Teo García Egea, secretario general del PP" data-value="1702885" href="/noticias/nacional/2022/02/22/1702885/guerra-dimite-teo-garcia-egea-secretario-general-del-pp.html"><h3>Dimite Teo García Egea, secretario general del PP</h3></a></div>
+                                <div class="news-title"><a class="" title="Dimite Teo García Egea, secretario general del PP" data-value="1702885" href=""><h3>Dimite Teo García Egea, secretario general del PP</h3></a></div>
+                                <div class="news-description"><h4>La presidenta de Baleares se crece y ya piensa en elecciones anticipadas para ganar más escaños ante tremenda pifiada.</h4></div>
+                                <div class="news-author"><h5>Pepito</h5></div>
+                            </div>
+                            <div class="desktop-news">
+                                <div class="news-image"><img src="images\1933061.jpg" alt=""></div>
+                                <div class="news-title"><a class="" title="Dimite Teo García Egea, secretario general del PP" data-value="1702885" href=""><h3>Dimite Teo García Egea, secretario general del PP</h3></a></div>
                                 <div class="news-description"><h4>La presidenta de Baleares se crece y ya piensa en elecciones anticipadas para ganar más escaños ante tremenda pifiada.</h4></div>
                                 <div class="news-author"><h5>Pepito</h5></div>
                             </div>
@@ -188,12 +194,46 @@
                         <div class="banner"><img src="https://tpc.googlesyndication.com/simgad/14556498944661681363" border="0" width="300" height="250" alt="" class="img_ad"></div>
                     </div>
                 </div>
+                <div class="desktop-3news-banner">
+                    <div class="aside-banner">
+                        <div class="banner"><img src="https://tpc.googlesyndication.com/simgad/14556498944661681363" border="0" width="300" height="250" alt="" class="img_ad"></div>
+                    </div>
+                    <div class="desktop-3news-block">
+                        <div class="desktop-news">
+                            <div class="news-image"><img src="/images/1.jpg" alt=""></div>
+                            <div class="news-title"><a class="" title="Dimite Teo García Egea, secretario general del PP" data-value="1702885" href=""><h3>Dimite Teo García Egea, secretario general del PP</h3></a></div>
+                            <div class="news-description"><h4>En el Partido Socialista se recibió la noticia con mucha alegría. Presidenta de Baleares: "ya huelo más votos. Lo celebraré en el mismo bar y sin restricciones de horario."</h4></div>
+                            <div class="news-author"><h5>Pepito</h5></div>
+                        </div>                   
+                        <div class="desktop-3-col-news">
+                            <div class="desktop-news">
+                                <div class="news-image"><img src="images\1930759.jpg" alt=""></div>
+                                <div class="news-title"><a class="" title="Dimite Teo García Egea, secretario general del PP" data-value="1702885" href=""><h3>Dimite Teo García Egea, secretario general del PP</h3></a></div>
+                                <div class="news-description"><h4>La presidenta de Baleares se crece y ya piensa en elecciones anticipadas para ganar más escaños ante tremenda pifiada.</h4></div>
+                                <div class="news-author"><h5>Pepito</h5></div>
+                            </div>
+                            <div class="desktop-news">
+                                <div class="news-image"><img src="images\1933061.jpg" alt=""></div>
+                                <div class="news-title"><a class="" title="Dimite Teo García Egea, secretario general del PP" data-value="1702885" href=""><h3>Dimite Teo García Egea, secretario general del PP</h3></a></div>
+                                <div class="news-description"><h4>Nadal: "Menuda pifiada... da ganas de hacerse de VOX...</h4></div>
+                                <div class="news-author"><h5>Pepito</h5></div>
+                            </div>
+                            <div class="desktop-news">
+                                <div class="news-image"><img src="images\1930681.jpg" alt=""></div>
+                                <div class="news-title"><a class="" title="Dimite Teo García Egea, secretario general del PP" data-value="1702885" href=""><h3>Dimite Teo García Egea, secretario general del PP</h3></a></div>
+                                <div class="news-description"><h4>Afines a Vox salen a la calle para mofarse del PP por derechita cobarde.</h4></div>
+                                <div class="news-author"><h5>Pepito</h5></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </main>
 
         <footer>
             <div class="footer-title">
-                <div class="brand"><a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 25"><path d="M137.96 7.01c-2.93.13-3.88 1.95-3.88 1.95V7.21h-6.9v3.81h.81v9.39h-.92v3.92h8.14v-3.92h-1.13V15.1s-.43-2.22 2.27-2.22c.68 0 1.62.26 1.62.26l-.01-6.13zM91.63 1.17v4.02h1.52v15.06h-1.52v4.03h8.96v-3.92h-1.3V15.2h3.46v5.05h-1.3v4.03h9.28v-4.03h-1.62V5.09h1.62V1.17h-9.39v3.92h1.41v5.16h-3.46V5.09h1.3V1.17zm53.67 20.07c-1.02 0-.97-.88-.97-.88v-2.48s.11-1.08 1.02-1.08c.97 0 .97 1.08.97 1.08v2.48s.06.88-1.02.88m6.52-.83v-8.36s.49-5.62-6.82-5.62c-4.13 0-5.91 1.39-5.91 1.39v4.28s2.05-1.39 4.48-1.39c2.7 0 2.64 1.39 2.64 1.39v2.53s-1.24-1.08-3.1-1.08c-5.21 0-4.99 5.57-4.99 5.57s-.33 5.88 4.89 5.88c1.9 0 3.2-1.5 3.2-1.5v.83h6.63V20.4l-1.02.01zm-34.27-7.79s.06-1.6 1.19-1.6c1.19 0 1.24 1.6 1.24 1.6v6.65s-.06 1.24-1.19 1.24-1.24-1.24-1.24-1.24v-6.65zm1.21-5.83c-6.04 0-7.66 4.02-7.66 9.13 0 4.39 1.78 8.82 7.66 8.82 6.14 0 7.66-4.18 7.66-8.82 0-5-1.56-9.13-7.66-9.13M.36 1.02h9.77v3.94h-1.5v13.23s-.08 2.34 1.95 2.34c0 0 2.26.22 2.26-2.34.08 0 0-12.13 0-12.13s-.3-1.1-1.8-1.1V1.02h6.92v3.94s-1.58.15-1.58 1.02c.08 0 0 13.08 0 13.08s.45 5.19-5.71 5.77c0 0-8.57 1.24-8.5-6.72-.08 0 0-13.15 0-13.15H.37V1.02zM18.85.91v3.98h.75v15.52h-.97v3.92h8.14v-3.92h-1.08V.91zm9.06 2.99v3.3h-1.08v3.82h1.03v8.62s-.9 2.62 1.4 4.07c2.07 1.31 6.47-.16 6.47-.16v-3.77s-1.03.52-1.72-.16c-.26-.25-.22-.88-.22-.88V11h2.11V7.2h-2.11V2.4l-5.88 1.5zm8.95 3.31v3.81h.97v9.39h-.97v3.92H45v-3.92h-1.02V7.21zm0-3.87c0-1.62 1.62-2.94 3.61-2.94 1.99 0 3.61 1.32 3.61 2.94 0 1.62-1.62 2.94-3.61 2.94-1.99 0-3.61-1.32-3.61-2.94m9 3.87v3.82h.81v9.39h-.92v3.92h8.14v-3.92h-1.13v-8.36s-.06-1.08.92-1.08c1.02 0 1.02 1.08 1.02 1.08v12.27h7.23v-3.92H60.8v-8.36s.11-1.08 1.02-1.08c.97 0 1.02 1.08 1.02 1.08v12.27h6.9V20.4h-.92V10.35s-.06-3.97-4.37-3.97c-2.86 0-3.99 1.91-3.99 1.91s-1.19-1.96-3.51-1.96c-3.18 0-4.21 2.63-4.21 2.63V7.21h-6.88zm31.5 14.03c-1.02 0-.97-.88-.97-.88v-2.48s.11-1.08 1.02-1.08c.97 0 .97 1.08.97 1.08v2.48c.01 0 .06.88-1.02.88m6.52-.83v-8.36s.49-5.62-6.82-5.62c-4.13 0-5.91 1.39-5.91 1.39v4.28s2.05-1.39 4.48-1.39c2.7 0 2.64 1.39 2.64 1.39v2.53s-1.24-1.08-3.1-1.08c-5.21 0-4.99 5.57-4.99 5.57S69.86 25 75.08 25c1.9 0 3.19-1.49 3.19-1.49v.83h6.63v-3.92l-1.02-.01z"></path></svg></a></div>
+                <div class="brand"><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 25"><path d="M137.96 7.01c-2.93.13-3.88 1.95-3.88 1.95V7.21h-6.9v3.81h.81v9.39h-.92v3.92h8.14v-3.92h-1.13V15.1s-.43-2.22 2.27-2.22c.68 0 1.62.26 1.62.26l-.01-6.13zM91.63 1.17v4.02h1.52v15.06h-1.52v4.03h8.96v-3.92h-1.3V15.2h3.46v5.05h-1.3v4.03h9.28v-4.03h-1.62V5.09h1.62V1.17h-9.39v3.92h1.41v5.16h-3.46V5.09h1.3V1.17zm53.67 20.07c-1.02 0-.97-.88-.97-.88v-2.48s.11-1.08 1.02-1.08c.97 0 .97 1.08.97 1.08v2.48s.06.88-1.02.88m6.52-.83v-8.36s.49-5.62-6.82-5.62c-4.13 0-5.91 1.39-5.91 1.39v4.28s2.05-1.39 4.48-1.39c2.7 0 2.64 1.39 2.64 1.39v2.53s-1.24-1.08-3.1-1.08c-5.21 0-4.99 5.57-4.99 5.57s-.33 5.88 4.89 5.88c1.9 0 3.2-1.5 3.2-1.5v.83h6.63V20.4l-1.02.01zm-34.27-7.79s.06-1.6 1.19-1.6c1.19 0 1.24 1.6 1.24 1.6v6.65s-.06 1.24-1.19 1.24-1.24-1.24-1.24-1.24v-6.65zm1.21-5.83c-6.04 0-7.66 4.02-7.66 9.13 0 4.39 1.78 8.82 7.66 8.82 6.14 0 7.66-4.18 7.66-8.82 0-5-1.56-9.13-7.66-9.13M.36 1.02h9.77v3.94h-1.5v13.23s-.08 2.34 1.95 2.34c0 0 2.26.22 2.26-2.34.08 0 0-12.13 0-12.13s-.3-1.1-1.8-1.1V1.02h6.92v3.94s-1.58.15-1.58 1.02c.08 0 0 13.08 0 13.08s.45 5.19-5.71 5.77c0 0-8.57 1.24-8.5-6.72-.08 0 0-13.15 0-13.15H.37V1.02zM18.85.91v3.98h.75v15.52h-.97v3.92h8.14v-3.92h-1.08V.91zm9.06 2.99v3.3h-1.08v3.82h1.03v8.62s-.9 2.62 1.4 4.07c2.07 1.31 6.47-.16 6.47-.16v-3.77s-1.03.52-1.72-.16c-.26-.25-.22-.88-.22-.88V11h2.11V7.2h-2.11V2.4l-5.88 1.5zm8.95 3.31v3.81h.97v9.39h-.97v3.92H45v-3.92h-1.02V7.21zm0-3.87c0-1.62 1.62-2.94 3.61-2.94 1.99 0 3.61 1.32 3.61 2.94 0 1.62-1.62 2.94-3.61 2.94-1.99 0-3.61-1.32-3.61-2.94m9 3.87v3.82h.81v9.39h-.92v3.92h8.14v-3.92h-1.13v-8.36s-.06-1.08.92-1.08c1.02 0 1.02 1.08 1.02 1.08v12.27h7.23v-3.92H60.8v-8.36s.11-1.08 1.02-1.08c.97 0 1.02 1.08 1.02 1.08v12.27h6.9V20.4h-.92V10.35s-.06-3.97-4.37-3.97c-2.86 0-3.99 1.91-3.99 1.91s-1.19-1.96-3.51-1.96c-3.18 0-4.21 2.63-4.21 2.63V7.21h-6.88zm31.5 14.03c-1.02 0-.97-.88-.97-.88v-2.48s.11-1.08 1.02-1.08c.97 0 .97 1.08.97 1.08v2.48c.01 0 .06.88-1.02.88m6.52-.83v-8.36s.49-5.62-6.82-5.62c-4.13 0-5.91 1.39-5.91 1.39v4.28s2.05-1.39 4.48-1.39c2.7 0 2.64 1.39 2.64 1.39v2.53s-1.24-1.08-3.1-1.08c-5.21 0-4.99 5.57-4.99 5.57S69.86 25 75.08 25c1.9 0 3.19-1.49 3.19-1.49v.83h6.63v-3.92l-1.02-.01z"></path></svg></a></div>
             </div>
         </footer>
             

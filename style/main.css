@@ -1,5 +1,18 @@
 /*====================
-=======Structure======
+=======ELEMENTS=======
+======================*/
+
+a{
+    text-decoration: none;
+    color: hsl(210, 11%, 15%);
+}
+
+img {
+    max-width: 100%;
+}
+
+/*====================
+======STRUCTURE=======
 ======================*/
 
 body{ 
@@ -18,13 +31,33 @@ body{
 }
 
 header{
-    height: 17vh;
+    height: auto;
     justify-content: start;
     width: 100%;
+    height: 20vh;
     margin: 0 0% 0 0%;
 }
 
-.nav-top{
+main{
+    margin: auto;
+    width: 100%;
+}
+
+footer{
+    margin: 1em 0 0 0;
+    padding: 0 0;
+    width: 100%;
+    height: 10vh;
+    background-color: hsl(0, 100%, 40%);
+    font-weight: bold;
+    text-align: center;
+}
+
+/*====================
+======HEADER==========
+======================*/
+
+.nav-top-container{
     display: flex;
     flex-direction: column;
     font-size: .75rem;
@@ -34,20 +67,23 @@ header{
     height: 13vh;
 }
 
-.nav-top-container{
-    margin: 0 0 0 0;
+.nav-top-shortcuts{
+    background-color: hsl(0, 0%, 90%);
+    margin: 0;
     padding: 0;
     width: 100%;
     height: 3vh;
-    background-color: hsl(0, 0%, 90%);
     font-weight: bold;
+    display: flex;
+    justify-content: center;
 }
 
-.nav-top-container-2col{
+.nav-top-2col{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     height: 3vh;
-    width: 100%;
+    width: 90%;
 }
 
 .nav-top-today{
@@ -58,10 +94,14 @@ header{
 }
 
 .nav-top-news-list{
+    margin: 0;
+    height: 3vh;
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
+    list-style-type: none;
+    gap: 0.5em;
 }
 
 .nav-top-news-list-start{
@@ -78,79 +118,97 @@ header{
     height: 3vh;
 }
 
-.nav-top-today ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 0.5em;
-    list-style-type: none;
-
-}
-
-.nav-top-islands ul{
+.nav-top-islands-list{
+    margin: 0;
+    height: 3vh;
     display: flex;
     flex-direction: row;
     justify-content: end;
-    gap: 1em;
+    align-items: center;
     list-style-type: none;
+    gap: 1em;
+}
 
+.nav-top-islands-list-item{
+    color: hsl(0, 0%, 67%);
+    font-weight: bold;
 }
 
 .nav-top-fixed{
     margin: 0 0 0 0;
-    padding: 0 0;
+    padding: 0em;
     width: 100%;
     height: 10vh;
     background-color: hsl(0, 100%, 40%);
     font-weight: bold;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-top-fixed-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
     height: 10vh;
-    width: 100%;
+    margin: 0;
+    width: 90%;
 }
 
-.nav-top-hamburguer{
+.hamburguer-container{
+    height: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 3vh;
-    width: 3%;
 }
 
-.nav-top-hamburguer svg{
-    fill: hsl(0, 0%, 100%);
+#hamburguer {
+    fill: white;
+    width: 40px;
+    height: 40px;
 }
 
-.nav-top-hamburguer-menu{
+.hamburguer-menu{
     display: none;
 }
+
 .brand{
-    fill: hsl(0, 0%, 100%);
-    width: 25%;
+    margin-left: 15%;
     height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.brand svg{
+    fill: hsl(0, 0%, 100%);
+    width: 25em;
+    height: 6vh;
 }
 
 .nav-top-buttoms{
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-around;
+    align-items: center;
     gap: 2em;
-    height: 3vh;
+    height: 10vh;
 }
 
 .nav-top-inline{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    height: 2em;
+    padding: 0.5em;
     color: hsl(210, 11%, 15%);
     background-color: hsl(207, 17%, 88%);
     border-color: hsl(210, 16%, 85%);
     border-radius: 0.5em;
+}
+
+.nav-top-inline a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0.5em;
 }
 
 .nav-top-inline svg{
@@ -159,11 +217,13 @@ header{
 }
 
 .nav-top-subscribe{
+    height: 2em;
     background-color: hsl(47, 100%, 50%);
     border-radius: 0.5em;
     font-family: "Times New Roman",Times,serif;
     font-style: italic;
     font-weight: bold;
+    padding: 0.5em;
 }
 
 .nav-top-fixed-scroller{
@@ -181,15 +241,20 @@ header{
 
 .nav-bottom{
     width: 100%;
-    height: 3vh;
+    height: 3.5vh;
     border-bottom: solid 2px hsl(0, 0%, 80%);
     background-color: hsl(0, 0%, 90%);
     margin-bottom: 0.5em;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-bottom-container{
-    width: 100%;
-    height: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 3.5vh;
 }
 
 .nav-bottom-menu{
@@ -198,7 +263,7 @@ header{
     height: 3vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -211,23 +276,23 @@ header{
 .nav-bottom-menu-item{
     color: hsl(0, 0%, 20%);
     font-weight: 700;
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-family: "Roboto Condensed";
+    text-align: center;
 }
 
 .nav-bottom-menu-search {
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.0em;
+    height: 1.0em;
     fill: rgb(0, 0, 0);
 }
 
-main{
-    margin: 0 5% 0 5%;
-    width: 90%;
-}
+/*====================
+======MAIN============
+======================*/
 
 .main-container{
-    padding-top: 0.5rem;
+    padding: 0 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -236,55 +301,75 @@ main{
 
 .top-banner{
     margin-bottom: 0.5em;
-    width: 90%;
+    width: auto;
 }
 
-.desktop-news{
-    margin-bottom: 0.5em;
+.desktop-featured-news{
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0.5em;
 }
 
 .news-image{
     z-index: 1000;
-    margin-bottom: 1.5em;
+    margin: 0em;
+    height: auto;
 }
 
 .news-featured-title{
     text-align: center;
-    position: relative;
-    bottom: 3em;
     z-index: 1005;
     background-color: hsl(0, 100%, 40%);
-    width: 15em;
+    color: white;
+    width: 20em;
+    position: relative;
+    bottom: 2em;
+}
+
+.featured-color{
+    color: white;
 }
 
 .news-title{
-    margin-bottom: 0.5em;
-    text-align: left;
+    height: fit-content;
+    text-align: center;
+    position: relative;
+    bottom: 2em;
 }
 
 .news-description{
-    margin-bottom: 0.5em;
-    text-align: left;
+    height: fit-content;
+    text-align: center;
+    position: relative;
+    bottom: 2em;
 }
 
 .news-author{
-    margin-bottom: 0.5em;
-    text-align: left;
+    height: fit-content;
+    text-align: center;
+    position: relative;
+    bottom: 2em;
 }
 
 .desktop-4-col{
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    justify-content: space-between;
     width: 100%;
     margin-bottom: 0.5em;
 }
 
 .desktop-1-col{
-    width: 25%;
+    width: 22.5%;
+}
+
+.desktop-news{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5em;
 }
 
 .desktop-3news-banner{
@@ -296,17 +381,18 @@ main{
 }
 
 .desktop-3news-block{
-    width: 70%;
+    width: 66%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.desktop-2-col-news{
+.desktop-3-col-news{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 5%;
 }
 
 .aside-banner{
@@ -319,30 +405,154 @@ main{
     width: 100%;
 }
 
-footer{
-    margin-top: 1em; 
-    margin: 0 0 0 0;
-    padding: 0 0;
-    width: 100%;
-    height: 10vh;
-    background-color: hsl(0, 100%, 40%);
-    font-weight: bold;
-    text-align: center;
-}
-
-
 /*====================
-======Typography======
+======FOOTER==========
 ======================*/
 
-
-
-/*====================
-========Image=========
-======================*/
-
-img {
-    max-width: 100%;
+.footer-title{
+    width: 90%;
+    display: flex;
+    justify-content: center;
 }
 
-@media (max-width:479px) {}
+@media (max-width:479px) {
+
+    h1, h2 {
+        font-size: 1.2em;
+    }
+
+    h3, h4 {
+        font-size: 0.9em;
+    }
+
+    h5, p{
+        font-size: 0.7em;
+    }
+
+    header{
+        height: auto;
+        justify-content: start;
+        width: 100%;
+        height: 13vh;
+        margin: 0 0 0.5em 0;
+    }
+
+    .nav-bottom{
+        display: none;
+    }
+
+    .nav-top-today{
+        margin: 0;
+        width: 60%;
+        height: 3vh;
+        display: none;
+    }
+
+    .brand svg{
+        fill: hsl(0, 0%, 100%);
+        width: 15em;
+        height: 6vh;
+    }
+
+    .brand{
+        margin-left: 0;
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav-top-inline p{
+        display: none;
+    }
+
+    .nav-top-buttoms{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1em;
+        height: 10vh;
+    }
+
+    .top-banner img{
+        height: 15vh;
+    }
+
+    .desktop-4-col {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .desktop-1-col {
+        width: auto;
+    }
+
+    .news-image {
+        text-align: center;
+    }
+
+    .news-title{
+        height: fit-content;
+        text-align: center;
+        position: relative;
+        bottom: 1em;
+    }
+
+    .news-description{
+        height: fit-content;
+        text-align: center;
+        position: relative;
+        bottom: 1em;
+    }
+
+    .news-author{
+        height: fit-content;
+        text-align: center;
+        position: relative;
+        bottom: 1em;
+    }
+
+    .desktop-3news-banner{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .aside-banner{
+        width: 100%;
+        margin-bottom: 0.5em;
+        text-align: center;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    .banner img {
+        padding: 0.5em 0;
+        border-top: 0.2em;
+        border-bottom: 0.2em;
+        border-color: hsl(0, 100%, 40%);
+        border-style: solid;
+    }
+
+    .desktop-3news-block{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .desktop-3-col-news{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .desktop-news{
+        gap: 1.0em;
+    }
+}

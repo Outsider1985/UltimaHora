@@ -7,20 +7,25 @@ a{
     color: hsl(210, 11%, 15%);
 }
 
-h1, h2, h3 {
-    font-size: 1.2em;
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5em;
     font-style: italic;
-    color: hsl(210, 11%, 15%);
 }
 
-h4, h5 {
+h2 {
+  color:hsl(0, 100%, 40%);
+  font-size: 0.9em;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-style: bold;
+}
+
+h4, h5, h6, p {
     font-size: 1em;
-    color: hsl(210, 11%, 15%);
-}
-
-p {
     text-align: left;
-    color: hsl(210, 11%, 15%);
 }
 
 img {
@@ -441,13 +446,25 @@ footer{
 
 @media (max-width:479px) {
 
-    h1, h2, h3 {
+    h1 {
+        color: hsl(0, 0%, 100%);
         font-size: 1.2em;
         font-style: italic;
     }
 
-    h4, h5, p {
+    h2 {
+      color:hsl(0, 100%, 40%);
+      font-size: 0.9em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+        font-style: bold;
+    }
+
+    h4, h5, h6, p {
         font-size: 0.9em;
+        text-align: left;
     }
 
     header{
@@ -512,8 +529,10 @@ footer{
     }
 
     .desktop-featured-news, .desktop-news{
-        border-top: solid;
+        border-bottom: solid;
+        border-color: hsl(0, 0%, 80%);
         padding-top: 1em;
+        padding-bottom: 1em;
         gap: 0.2em;
     }
 
@@ -548,6 +567,7 @@ footer{
         width: 100%;
         border-color: hsl(0, 100%, 40%);
         border-top-style: solid;
+        border-bottom-style: solid;
     }
 
     .banner img {
